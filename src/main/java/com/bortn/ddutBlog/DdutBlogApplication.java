@@ -8,8 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DdutBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DdutBlogApplication.class, args);;
+		SpringApplication.run(DdutBlogApplication.class, args);
 		Parser parser = new Parser();
+
 		parser.start();
 	}
 

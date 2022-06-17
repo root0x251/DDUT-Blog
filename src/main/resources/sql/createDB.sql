@@ -12,3 +12,4 @@ CREATE TABLE full_news (
 	full_text TEXT NOT NULL,
 	fk_short_news integer references short_news("id")
 );
+
