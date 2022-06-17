@@ -1,4 +1,4 @@
-package jsoup;
+package com.bortn.ddutBlog.jsoup;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

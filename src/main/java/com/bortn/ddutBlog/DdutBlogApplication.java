@@ -1,6 +1,6 @@
 package com.bortn.ddutBlog;
 
-import jsoup.Parser;
+import com.bortn.ddutBlog.jsoup.Parser;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
