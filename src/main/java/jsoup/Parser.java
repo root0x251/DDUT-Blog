@@ -1,4 +1,4 @@
-package com.example.demo.jsoup;
+package jsoup;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
