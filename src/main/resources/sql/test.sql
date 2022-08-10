@@ -13,4 +13,5 @@ CREATE TABLE full_news (
 	fk_short_news integer references short_news("id")
 );
 
---DROP TABLE short_news, full_news;
+
+DROP TA
