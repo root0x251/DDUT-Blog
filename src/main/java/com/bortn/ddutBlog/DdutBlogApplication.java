@@ -7,11 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DdutBlogApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DdutBlogApplication.class, args);
-		Parser parser = new Parser();
 
-		parser.start();
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DdutBlogApplication.class, args);
+    }
 
 }
