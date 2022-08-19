@@ -1,10 +1,9 @@
-package com.bortn.ddutBlog.entity;
+package com.bortn.ddutBlog.entity.news;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,9 +17,8 @@ public class FullNewsEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "full_text", columnDefinition="TEXT")
+    @Column(name = "full_text", columnDefinition = "TEXT")
     private String fullText;
-
 
     @OneToOne
     @JoinColumn(name = "short_news_id", referencedColumnName = "id")

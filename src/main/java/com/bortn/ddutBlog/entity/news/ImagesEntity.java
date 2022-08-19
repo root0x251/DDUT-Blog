@@ -1,4 +1,4 @@
-package com.bortn.ddutBlog.entity;
+package com.bortn.ddutBlog.entity.news;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package com.bortn.ddutBlog.repository;
+package com.bortn.ddutBlog.repository.news;
 
-import com.bortn.ddutBlog.entity.LinkDocumentsEntity;
+import com.bortn.ddutBlog.entity.news.LinkDocumentsEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
