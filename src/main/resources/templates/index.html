@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Blog And Magazine HTML5 Template" />
+    <meta name="keywords" content="HTML5, Template, Design, blog, blogger, clean, flat, food, html, magazine, modern, news, personal, photographer, template, white  " />
+
+    <!-- Titles
+    ================================================== -->
+    <title>title</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="https://vsevobr.ru/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://vsevobr.ru/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://vsevobr.ru/img/favicon.ico" />
+
+    <!-- Custom Font
+	================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Barlow:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/simple-scrollbar.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/fontawesome.all.min.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/color/color-four.css}" />
+    <script th:src="@{assets/js/modernizr.min.js}"></script>
+<!--    th:href="@{/styles/cssandjs/main.css}-->
+
+    <!--	def-->
+    <link rel="stylesheet" th:href="@{assets/css/main.css}">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-white-smoke">
+    <div class="site-content">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				Start Site Header
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <header class="site-header default-header-style style-two intro-element">
+            <div class="header-top-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="site-branding text-center">
+                                <a href="index.html">
+                                    <img th:src="@{/assets/images/logo/logo.png}" alt="Site Logo" class="logo" />
+                                </a>
+                            </div><!-- /.site-branding -->
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="site-branding text-center">
+                                Муниципальное бюджетное образовательное учреждение дополнительного образования
+                                «Дворец детского (юношеского) творчества Всеволожского района»
+                            </div><!-- /.site-branding -->
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="header-right-area">
+                                <div class="header-card-area">
+                                    телефоны: <br>
+                                    8(81370) 25129<br>
+                                    8(81370) 29201<br>
+                                    8(81370) 38-144<br>
+                                    e – mail: ddut@vsevobr.ru
+                                </div>
+                                <!--~./ header card area ~-->
+
+                                <!--
+                                <div class="hamburger-menus">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+-->
+                            </div><!-- /.header-top-right-area -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.header-top-area -->
+
+            <div class="navigation-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="site-navigation">
+                                <nav class="navigation">
+                                    <div class="menu-wrapper">
+                                        <div class="menu-content">
+                                            <ul class="mainmenu">
+                                                <li><a href="#">Главная</a></li>
+                                                <li><a href="#">Сведения об образовательном учреждении</a></li>
+                                                <li><a href="gallery.html">Деятельность</a></li>
+                                                <li><a href="parents.html">Родителям</a></li>
+                                                <li><a href="contact.html">Контакты</a></li>
+                                                <li><a href="media.html">Медиа</a></li>
+                                                <li><a href="dou.html">Дошкольное отделение</a></li>
+                                            </ul> <!-- /.menu-list -->
+                                        </div> <!-- /.hours-content-->
+                                    </div><!-- /.menu-wrapper -->
+                                </nav>
+                            </div><!-- /.site-navigation -->
+                        </div><!-- /.col-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.navigation-area -->
+
+            <div class="mobile-sidebar-menu sidebar-menu">
+                <div class="overlaybg"></div>
+            </div>
+        </header>
+        <!--~~./ end site header ~~-->
+        <!--~~~ Sticky Header ~~~-->
+        <div id="sticky-header" class="active"></div>
+        <!--~./ end sticky header ~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				Start Frontpage Slider Posts
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="frontpage-slider-posts">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://ddut.vsevobr.ru/upload/2020/02/20160920184036-40-10011654415e3807507ee878.71081368.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://ddut.vsevobr.ru/upload/2020/02/20160920184036-40-10011654415e3807507ee878.71081368.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://ddut.vsevobr.ru/upload/2020/02/20160920184036-40-10011654415e3807507ee878.71081368.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--~./End frontpage slider posts ~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Start Features Block
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="features-block mrb-45">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#photo" role="tab" aria-controls="photo" aria-selected="true">ФОТО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#paper" role="tab" aria-controls="paper" aria-selected="false">ГАЗЕТА "НАШЕ ВСЁ"</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#compilation" role="tab" aria-controls="compilation" aria-selected="false">СБОРНИКИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">ВИДЕО</a>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane active" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+                                <section>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="scrollcards">
+
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/07/thumbs/20210719221407-38-126075687660f5cfb1821217.75633195.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/07/thumbs/20210719221314-5-40219894060f5cee75b9779.15993445.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/07/thumbs/20210719220817-96-111918006160f5ce2c9ca738.51986700.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/07/thumbs/20210719220354-55-25872564160f5cd06a01372.97579107.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/images/viewmore.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="tab-pane" id="paper" role="tabpanel" aria-labelledby="paper-tab">
+
+                                <section>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="scrollcards">
+
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/05/thumbs/20220504202611-3-5111322416272b7705b2013.63811146.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/04/thumbs/20220401201127-98-1793456048624732925f0df7.44032741.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/03/thumbs/20220323204825-6-761446804623b5d7d429017.56651749.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/02/thumbs/20220204211528-15-77639233761fd6d895f20c3.46159641.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/12/thumbs/20211203160022-63-181868468061aa1508f39c09.30138421.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/10/thumbs/20211029004952-97-2018893963617b1b67806e98.50992379.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div class="tab-pane" id="compilation" role="tabpanel" aria-labelledby="compilation-tab">
+                                <section>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="scrollcards">
+
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/04/thumbs/20220421231533-64-650546296261bbebeb9610.51988671.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/04/thumbs/20220408230101-53-105341891262509709413a54.88454087.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/04/thumbs/20220408232620-61-203857706562509ac3e228a7.16446242.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2022/04/thumbs/20220408232811-40-134809891262509b4a096e21.39422264.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/upload/2021/09/thumbs/20210907160611-36-95090514861376482dd0415.24525106.png">
+                                                    </a>
+                                                </div>
+                                                <div class="card-paper">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/images/viewmore.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="tab-pane" id="video" role="tabpanel" aria-labelledby="video-tab">
+                                <section>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="scrollcards">
+
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/images/video1.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="https://ddut.vsevobr.ru/images/v2.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--~./ end features block ~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Main Wrapper
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="main-wrapper mrb-80">
+            <div class="container">
+                <div class="row justify-content-between gutters-50">
+                    <div class="col-lg-9 main-wrapper-content">
+                        <!--~~~~~ Start Site Main ~~~~~-->
+                        <main class="site-main">
+                            <h4 class="widget-title news">
+                                Новости
+                            </h4>
+                            <div class="row gutters-50">
+
+                                <!--~~~~~ Start Post ~~~~~-->
+
+                                <tr th:each="news : ${shortNews}" >
+<!--                                    <td th:text="${news.image}"></td>-->
+<!--                                    <td th:text="${news.title}"></td>-->
+<!--                                    <td th:text="${news.date}"></td>-->
+<!--                                    <td th:text="${news.shortNewsText}"></td>-->
+<!--                                    <td th:text="${news.descriptionLink}"></td>-->
+<!--                                -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <article class="post hentry post-grid text-center style-five">
+                                            <div class="entry-thumb">
+                                                <figure class="thumb-wrap">
+                                                    <a href="single-post.html">
+                                                        <img th:src="${news.image}" alt="post" />
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="content-entry-wrap">
+                                                <h3 class="entry-title">
+                                                    <a href="single-post.html" th:text="${news.title}"></a>
+                                                </h3>
+                                                <div class="entry-meta-content">
+                                                    <div class="entry-date" th:text="${news.date}">
+<!--                                                        18 Мая 2022-->
+                                                    </div>
+                                                </div>
+                                                <div class="entry-summary">
+                                                    <p th:text="${news.shortNewsText}">
+<!--                                                        14-15 мая в Москве в Центральном доме работников искусств проходил финал Всероссийского конкурса детских театров кукол "Первые шаги".-->
+                                                    </p>
+                                                </div>
+                                                <div class="read-more-wrap">
+                                                    <a class="read-more" th:href="${news.descriptionLink}">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </tr>
+
+<!--                                <div class="col-lg-6 col-md-6">-->
+<!--                                    <article class="post hentry post-grid text-center style-five">-->
+<!--                                        <div class="entry-thumb">-->
+<!--                                            <figure class="thumb-wrap">-->
+<!--                                                <a href="single-post.html">-->
+
+<!--&lt;!&ndash;                                                    img&ndash;&gt;-->
+<!--                                                    <img src="https://ddut.vsevobr.ru/upload/2022/05/thumbs/20220518101405-47-165507343762849ce90becf9.79002272.jpg" alt="post" />-->
+<!--                                                </a>-->
+<!--                                            </figure>-->
+<!--                                            &lt;!&ndash;./ thumb-wrap &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash;./ entry-thumb &ndash;&gt;-->
+<!--                                        <div class="content-entry-wrap">-->
+<!--                                            <h3 class="entry-title">-->
+<!--&lt;!&ndash;                                                title&ndash;&gt;-->
+<!--                                                <a href="single-post.html">Первые шаги</a>-->
+<!--                                            </h3>-->
+<!--                                            &lt;!&ndash;./ entry-title &ndash;&gt;-->
+<!--                                            <div class="entry-meta-content">-->
+<!--                                                &lt;!&ndash;./ entry-date &ndash;&gt;-->
+<!--                                                <div class="entry-date">-->
+<!--                                                    18 Мая 2022-->
+<!--                                                </div>-->
+<!--                                                &lt;!&ndash;./ entry-date &ndash;&gt;-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash;./ entry-meta-content &ndash;&gt;-->
+<!--                                            <div class="entry-summary">-->
+<!--                                                <p>-->
+<!--                                                    14-15 мая в Москве в Центральном доме работников искусств проходил финал Всероссийского конкурса детских театров кукол "Первые шаги".-->
+<!--                                                </p>-->
+<!--                                            </div>-->
+<!--                                            <div class="read-more-wrap">-->
+<!--                                                <a class="read-more" href="single-post.html">Подробнее</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash;./ content-entry-wrap &ndash;&gt;-->
+<!--                                    </article>-->
+<!--                                </div>-->
+                                <!--~./ end post ~-->
+
+
+                                <!--~~~~~ Start Post ~~~~~-->
+                                <!--
+                                <div class="col-lg-6 col-md-6">
+                                    <article class="post hentry post-grid text-center style-five">
+                                        <div class="entry-thumb">
+                                            <figure class="thumb-wrap">
+                                                <a href="single-post.html">
+                                                    <img src="assets/images/post/homeOne/grid/post2.jpg" alt="post" />
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="content-entry-wrap">
+                                            <div class="entry-category">
+                                                <a class="cat" href="#">Design</a>
+                                                <a class="cat" href="#">Travel</a>
+                                                <a class="cat" href="#">Photography</a>
+                                            </div>
+                                            <h3 class="entry-title">
+                                                <a href="single-post.html">Nature Photography Best Focus</a>
+                                            </h3>
+                                            <div class="entry-meta-content">
+                                                <div class="entry-author">
+                                                    By <a href="#">Zohan Alex</a>
+                                                </div>
+                                                <div class="entry-date">
+                                                    On <span>Jan23 - 20</span>
+                                                </div>
+                                            </div>
+                                            <div class="entry-summary">
+                                                <p>
+                                                    When it comes to creating is a website for your business, an
+                                                    attractive design will only get you far. With people inc reasingly
+                                                    using their tablets
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+-->
+                                <!--~./ end post ~-->
+
+                            </div>
+                        </main>
+                        <!--~./ end site main ~-->
+
+                        <!--~~~~~ Start Paging Navigation ~~~~~-->
+                        <nav class="navigation paging-navigation style-one pd-t-15">
+                            <ul class="nav-links">
+                                <li><a href="#">1</a></li>
+                                <li class="active"><a href="#" class="page-numbers">2</a></li>
+                                <li><a href="#" class="page-numbers">3</a></li>
+                                <li class="nav-next">
+                                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--~./ end paging navigation ~-->
+                    </div>
+
+                    <!--~~~~~ Start sidebar ~~~~~-->
+                    <div class="col-lg-3">
+                        <!-- Sidebar Items -->
+                        <div class="sidebar-items style-three style-three-two">
+                            <!--~~~~~ Start About Me Widget ~~~~~-->
+                            <aside class="widget bt-about-me-widget style-two">
+                                <h4 class="widget-title">О Дворце</h4>
+                                <!-- /.widget-title -->
+                                <div class="widget-content">
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/data/ckfsys2/files/images/123/zdaniye_ddut_s.jpg" alt="img" /></a>
+                                    </div>
+                                    <div class="info">
+                                        <p class="info-about">
+                                            Крупнейшее в области учреждение дополнительного образования
+                                        </p>
+                                        126 дополнительных
+                                        общеразвивающих программы
+                                        по шести направленностям:
+                                        -туристско-краеведческая <br>
+                                        -физкультурно-спортивная<br>
+                                        -социально-гуманитарная<br>
+                                        -техническая<br>
+                                        -естественно-научная<br>
+                                        -художественная<br><br>
+
+                                        <p class="info-about">
+                                            Основан в 1953 году.
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="widget bt-about-me-widget style-two">
+                                <h4 class="widget-title">
+                                    Запись в детские объединения
+                                </h4>
+                                <!-- /.widget-title -->
+                                <div class="widget-content">
+                                    <div class="navigator">Навигатор дополнительного образования</div>
+
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/data/ckfsys2/files/images/image_page/vasechkiny_i_sertifikaty.png" alt="img" /></a>
+                                    </div>
+                                    <div class="info">
+                                        <p>По вопросам зачисления детей в ОУ:</p>
+                                        <p>Дополнительное образование: 8(81370) 25-129</p>
+                                        <p>Детский сад: 8(81370) 38-144</p>
+
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <aside class="widget bt-about-me-widget style-two">
+                                <h4 class="widget-title">
+                                    Дошкольное отделение
+                                </h4>
+                                <!-- /.widget-title -->
+                                <div class="widget-content">
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/data/ckfsys2/files/images/2019-2020/navigator/cocped/portreti/20191126021542_90_19023046405e036a6e9d73b1_25255027.png" alt="img" /></a>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <aside class="widget bt-about-me-widget style-two">
+                                <h4 class="widget-title">
+                                    Ресурсы
+                                </h4>
+                                <!-- /.widget-title -->
+                                <div class="widget-content">
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/b5.png" alt="img" /></a>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/pnpo-2.png" alt="img" /></a>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/b4.png" alt="img" /></a>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/b2.png" alt="img" /></a>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/b1.png" alt="img" /></a>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <a href="#"><img src="https://ddut.vsevobr.ru/images/b3.png" alt="img" /></a>
+                                    </div>
+
+                                </div>
+                            </aside>
+
+                            <aside class="widget bt-about-me-widget style-two">
+                                <h4 class="widget-title">
+                                    Отделения
+                                </h4>
+                                <!-- /.widget-title -->
+                                <div class="widget-content">
+                                    <div class="info department">
+                                        <div class="department-title">Дошкольное отделение №1</div>
+                                        Ленинградская область, г. Всеволожск, Торговый проспект, дом 144а
+                                        Телефон: 8(81370) 38-144
+                                        <br>
+                                        <div class="department-coll">По вопросам зачисления в детский сад:</div>
+                                        8(81370) 38-144 <br>
+                                        <!--                                        <p><a href="#" class="mt-3 mb-3">Смотреть на карте</a></p>-->
+
+                                        Автобусы: 4,6;
+                                        Электричка до станции Мельничный ручей;
+                                        От станции Мельничный ручей пешком.
+                                        <div class="department-title mt-4">Центр экологического образования</div>
+                                        Ленинградская область, г. Всеволожск, Торговый проспект, дом 144а
+                                        Телефон: 8(81370) 38-144
+                                        Ленинградская область, город Всеволожск, ул. Грибоедова, д.10.
+                                        Телефон: 8(81370) 31-441<br>
+                                        <!--                                        <p><a href="#" class="mt-3 mb-3">Смотреть на карте</a></p>-->
+                                        Автобусы: 4,6;
+                                        Электричка до станции Мельничный ручей;
+                                        От станции Мельничный ручей пешком.
+
+                                        <div class="department-title mt-4">Морозовский отдел детского творчества</div>
+                                        Ленинградская область, пос. им. Морозова, ул. Первомайская д. 10а.
+                                        Телефон: 8(81370) 35-277
+                                        <!--                                        <p><a href="#" class="mt-3 mb-3">Смотреть на карте</a></p>-->
+
+                                    </div>
+                                </div>
+                            </aside>
+
+
+
+
+                        </div>
+                        <!--  /.sidebar-items -->
+                    </div>
+                    <!--~./ end sidebar ~-->
+                </div>
+            </div>
+        </div>
+        <!--~./ end main wrapper ~-->
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				Start Site Footer
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <footer class="site-footer">
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-bottom-content">
+                                <div class="copyright-text text-center">
+                                    <p>© 2022 Комитет по образованию администрации МО «Всеволожский район» Ленинградской области</p>
+                                    <p>© 2022 МБОУДО «ДДЮТ Всеволожского района»</p>
+                                </div>
+                                <!--~./ end copyright text ~-->
+                            </div>
+                        </div>
+                        <!--~./ col-12 ~-->
+                    </div>
+                </div>
+            </div>
+            <!--~./ end footer bottom area ~-->
+        </footer>
+        <!--~./ end site footer ~-->
+    </div>
+    <!--~~./ end site content ~~-->
+
+    <!-- All The JS Files
+		================================================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/simple-scrollbar.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/scrolla.jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- main-js -->
+</body>
+
+</html>
